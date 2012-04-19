@@ -1,0 +1,18 @@
+#!/usr/bin/env ruby
+
+require "rubygems"
+require "v2ex_cli"
+require 'commander/import'
+
+program :version, V2exCli::VERSION
+program :description, 'command line interface to v2ex.com'
+
+command :latest do |c|
+  c.syntax = 'v2ex latest'
+  c.description = 'list latest topics'
+  c.action do |args, options|
+    V2exCli::Engine.latest.each do |topic|
+      puts "#{topic[:id]}\t#{topic[:title]}"
+    end
+  end
+end
