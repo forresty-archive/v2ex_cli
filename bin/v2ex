@@ -16,3 +16,5 @@ command :latest do |c|
     end
   end
 end
+
+alias_command :l, :latest
