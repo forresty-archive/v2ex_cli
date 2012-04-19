@@ -57,3 +57,5 @@ REPL mode (Read, Eval, Print, Loop)
 ## Miscellaneous
 
 Made with love through [Readme Driven Development](http://tom.preston-werner.com/2010/08/23/readme-driven-development.html)
+
+Thanks [@livid](https://github.com/livid) for building the wonderful site [v2ex.com](http://www.v2ex.com) :)
