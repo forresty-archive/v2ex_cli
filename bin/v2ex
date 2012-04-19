@@ -28,11 +28,7 @@ command :topic do |c|
   c.action do |args, options|
     topic_id = args.first.to_i
     print_topic V2exCli::Engine.topic(topic_id), :show_content => true
-    info "\nreplies:\n"
-    V2exCli::Engine.replies(topic_id).each do |reply|
-      puts "#{reply[:member][:username]} ".ljust(25, '-')
-      print "#{reply[:content]}\n\n"
-    end
+    print_topic_replies V2exCli::Engine.replies(topic_id)
   end
 end
 
@@ -68,6 +64,19 @@ command :nodes do |c|
   c.action do |args, options|
     info "listing all nodes:\n"
     V2exCli::Engine.nodes.each { |node| puts node[:name].ljust(12) + node[:title] }
+  end
+end
+
+def print_topic_replies(replies)
+  info "\nreplies:\n"
+
+  if replies.empty?
+    puts "No replies yet."
+  else
+    replies.each do |reply|
+      puts "#{reply[:member][:username]} ".ljust(25, '-')
+      print "#{reply[:content]}\n\n"
+    end
   end
 end
 
