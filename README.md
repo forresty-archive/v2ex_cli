@@ -34,10 +34,6 @@ Show user info
 
     v2ex user livid
 
-or
-
-    v2ex @livid
-
 Show all nodes
 
     v2ex nodes

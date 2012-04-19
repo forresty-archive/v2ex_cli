@@ -1,12 +1,14 @@
 require "simplecov"
-SimpleCov.start
+SimpleCov.start do
+  add_filter 'spec'
+end
 
 require "v2ex_cli"
 
 require "open-uri"
 
 def fixture(filename)
-  JSON(raw_fixture(filename)).recursively_symbolize_keys
+  V2exCli::Engine.jsonize(raw_fixture(filename)).recursively_symbolize_keys
 end
 
 def raw_fixture(filename)

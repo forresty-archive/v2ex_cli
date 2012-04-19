@@ -5,6 +5,7 @@ require "cgi"
 module V2exCli
   module Engine
     class << self
+
       def latest
         get '/topics/latest.json'
       end
@@ -25,6 +26,21 @@ module V2exCli
         get "/topics/show.json?node_name=#{node_name}"
       end
 
+      def user_info(username)
+        get "/members/show.json?username=#{username}"
+      end
+
+      def nodes
+        get '/nodes/all.json'
+      end
+
+      def jsonize(data)
+        JSON(data)
+      rescue
+        # Some API might include invalid JSON, see https://github.com/livid/v2ex/issues/27
+        JSON data.gsub("\r", ' ').gsub("\n", ' ')
+      end
+
       private
       def api_endpoint
         'http://www.v2ex.com/api'
@@ -35,7 +51,7 @@ module V2exCli
       end
 
       def get(path)
-        JSON(get_raw(path)).recursively_symbolize_keys
+        jsonize(get_raw(path)).recursively_symbolize_keys
       end
     end
   end

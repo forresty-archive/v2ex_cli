@@ -7,8 +7,6 @@ require 'commander/import'
 program :version, V2exCli::VERSION
 program :description, 'command line interface to v2ex.com'
 
-global_option('--verbose') { $verbose = true }
-
 command :latest do |c|
   c.syntax = 'v2ex latest'
   c.description = 'list latest topics'
@@ -37,20 +35,53 @@ command :topics do |c|
   c.description = 'show topics of a user or a node'
   c.option '--user USERNAME', String, 'specify a username'
   c.option '--node NODE_NAME', String, 'specify a node_name'
+
   c.action do |args, options|
     options.default :user => '', :node => ''
-    if options.user == '' && options.node == ''
+
+    topics = if options.user == '' && options.node == ''
       puts "usage: v2ex topics --user USERNAME or v2ex topics --node NODE_NAME"
       print "listing all latest topics\n\n"
-      topics = V2exCli::Engine.latest
+
+      V2exCli::Engine.latest
     elsif options.user != ''
       print "latest topics by @#{options.user}:\n\n"
-      topics = V2exCli::Engine.user_topics(options.user)
+
+      V2exCli::Engine.user_topics(options.user)
     else
       print "latest topics under #{options.node}:\n\n"
-      topics = V2exCli::Engine.node_topics(options.node)
+
+      V2exCli::Engine.node_topics(options.node)
     end
+
     topics.each { |topic| print_topic(topic) }
+  end
+end
+
+command :user do |c|
+  c.syntax = 'v2ex user USERNAME'
+  c.description = 'show user info'
+  c.action do |args, options|
+    username = args.first
+    user = V2exCli::Engine.user_info(username)
+    puts "#{username} - V2EX Member ##{user[:id]}"
+    print_user_meta user
+    print "Bio:\n#{user[:bio]}\n" if user.has_key?(:bio) && user[:bio].length > 0
+  end
+end
+
+command :nodes do |c|
+  c.syntax = 'v2ex nodes'
+  c.description = 'list all nodes'
+  c.action do |args, options|
+    print "listing all nodes:\n\n"
+    V2exCli::Engine.nodes.each { |node| puts node[:name].ljust(12) + node[:title] }
+  end
+end
+
+def print_user_meta(user)
+  %w{twitter website location tagline}.map(&:to_sym).each do |key|
+    puts "#{key}:".ljust(11) + user[key] if user.has_key?(key) && user[key].length > 0
   end
 end
 
@@ -60,5 +91,8 @@ end
 
 alias_command :l, :latest
 alias_command :t, :topic
+alias_command :s, :topics
+alias_command :u, :user
+alias_command :n, :nodes
 
 default_command :latest
