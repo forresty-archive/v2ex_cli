@@ -2,6 +2,8 @@
 
 Command line interface to [v2ex.com](http://www.v2ex.com)
 
+Built on top of [v2ex API](https://github.com/livid/v2ex/blob/master/api.py)
+
 ## Screenshot
 
 ![v2ex_cli screenshot](http://forresty.com/images/v2ex_cli.png)
