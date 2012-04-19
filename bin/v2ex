@@ -58,11 +58,7 @@ command :user do |c|
   c.syntax = 'v2ex user USERNAME'
   c.description = 'show user info'
   c.action do |args, options|
-    username = args.first
-    user = V2exCli::Engine.user_info(username)
-    puts "#{username} - V2EX Member ##{user[:id]}"
-    print_user_meta user
-    print "Bio:\n#{user[:bio]}\n" if user.has_key?(:bio) && user[:bio].length > 0
+    print_user_meta V2exCli::Engine.user_info(args.first)
   end
 end
 
@@ -76,9 +72,11 @@ command :nodes do |c|
 end
 
 def print_user_meta(user)
+  puts "#{user[:username]} - V2EX Member ##{user[:id]}"
   %w{twitter website location tagline}.map(&:to_sym).each do |key|
     puts "#{key}:".ljust(11) + user[key] if user.has_key?(key) && user[key].length > 0
   end
+  print "Bio:\n#{user[:bio]}\n" if user.has_key?(:bio) && user[:bio].length > 0
 end
 
 def print_topic(topic, options={ :show_content => false })
