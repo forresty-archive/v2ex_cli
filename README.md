@@ -1,24 +1,50 @@
-# V2exCli
+# v2ex_cli
 
-TODO: Write a gem description
+Command line interface to [v2ex.com](http://www.v2ex.com)
 
 ## Installation
 
-Add this line to your application's Gemfile:
+    gem install v2ex # you might need to use sudo
 
-    gem 'v2ex_cli'
+If you are the lazy kind like me, try this
 
-And then execute:
+    alias v=v2ex
 
-    $ bundle
-
-Or install it yourself as:
-
-    $ gem install v2ex_cli
+Compatible with Ruby 1.8.7+ and Ruby 1.9+
 
 ## Usage
 
-TODO: Write usage instructions here
+List latest topics
+
+    v2ex latest
+
+Show a topic and its replies
+
+    v2ex topic TOPIC_ID
+
+List topics of a user
+
+    v2ex topics --user livid
+
+List topics of a node
+
+    v2ex topics --node xbox360
+
+Show user info
+
+    v2ex user livid
+
+or
+
+    v2ex @livid
+
+Show all nodes
+
+    v2ex nodes
+
+For more information, pass --help
+
+    v2ex --help
 
 ## Contributing
 
@@ -27,3 +53,7 @@ TODO: Write usage instructions here
 3. Commit your changes (`git commit -am 'Added some feature'`)
 4. Push to the branch (`git push origin my-new-feature`)
 5. Create new Pull Request
+
+## Miscellaneous
+
+Made with love through [Readme Driven Development](http://tom.preston-werner.com/2010/08/23/readme-driven-development.html)
