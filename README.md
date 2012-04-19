@@ -2,6 +2,10 @@
 
 Command line interface to [v2ex.com](http://www.v2ex.com)
 
+## Screenshot
+
+![v2ex_cli screenshot](http://forresty.com/images/v2ex_cli.png)
+
 ## Installation
 
     gem install v2ex # you might need to use sudo
