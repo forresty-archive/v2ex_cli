@@ -46,6 +46,10 @@ For more information, pass --help
 
     v2ex --help
 
+## TODO
+
+REPL mode (Read, Eval, Print, Loop)
+
 ## Contributing
 
 1. Fork it
