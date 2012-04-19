@@ -40,6 +40,14 @@ Show user info
 
     v2ex user livid
 
+Open topic/node/user in your web browser (Mac only)
+
+    v2ex open t TOPIC_ID
+
+    v2ex open u USERNAME
+
+    v2ex open n NODE_NAME
+
 Show all nodes
 
     v2ex nodes
@@ -49,8 +57,6 @@ For more information, pass --help
     v2ex --help
 
 ## TODO
-
-Commands to open web pages to topics/users/nodes etc
 
 REPL mode (Read, Eval, Print, Loop)
 

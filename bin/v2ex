@@ -58,6 +58,20 @@ command :user do |c|
   end
 end
 
+command :open do |c|
+  c.syntax = 'v2ex open ARGS'
+  c.description = 'open topics/users/nodes in your browser'
+  c.action do |args, options|
+    case args.first
+    when 't' then `open #{v2ex_prefix}/t/#{args.last}`
+    when 'u' then `open #{v2ex_prefix}/member/#{args.last}`
+    when 'n' then `open #{v2ex_prefix}/go/#{args.last}`
+    else
+      puts "Wrong arguments. First argument should be 't', 'u' or 'n'."
+    end
+  end
+end
+
 command :nodes do |c|
   c.syntax = 'v2ex nodes'
   c.description = 'list all nodes'
@@ -93,11 +107,16 @@ def print_topic(topic, options={ :show_content => false })
   puts "\n#{topic[:content]}" if options[:show_content]
 end
 
+def v2ex_prefix
+  'http://www.v2ex.com'
+end
+
 alias_command :l, :latest
 alias_command :t, :topic
 alias_command :ut, :user_topics
 alias_command :nt, :node_topics
 alias_command :u, :user
 alias_command :n, :nodes
+alias_command :o, :open
 
 default_command :latest
