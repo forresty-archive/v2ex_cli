@@ -1,0 +1,485 @@
+
+[
+    
+    
+    {
+        "id" : 32626,
+        "title" : "发现 DotA 2 里的一个问题，指令不能取消？",
+        "url" : "http://www.v2ex.com/t/32626",
+        "content" : "比如用右键在地图上点了好几下，让英雄去一个地方，然后英雄只会一个点一个点地走，没法直接改变方向去最后一个点？",
+        "content_rendered" : "比如用右键在地图上点了好几下，让英雄去一个地方，然后英雄只会一个点一个点地走，没法直接改变方向去最后一个点？",
+        "replies" : 2,
+        "member" : {
+            "id" : 1,
+            "username" : "Livid"
+        },
+        "node" : {
+            "id" : 452,
+            "name" : "dota",
+            "title" : "DotA",
+            "url" : "http://www.v2ex.com/go/dota",
+            "topics" : 16
+        },
+        "created" : "2012-04-19 05:23:53.339426",
+        "last_modified" : "2012-04-19 05:33:34.212608",
+        "last_touched" : "2012-04-19 05:31:40.654311"
+    }
+    
+    ,
+    {
+        "id" : 32520,
+        "title" : "向大家通报一下最近的进度",
+        "url" : "http://www.v2ex.com/t/32520",
+        "content" : "\u002D PB3 主体功能完成度 90%。\u000D\u000A\u002D 目前正在进行中的是数据迁移脚本。目标是实现一键完美迁移，用时会主要取决于网速。GAE 的 bulkloader 接口还是挺靠谱的。\u000D\u000A\u002D 在这个过程中，积累了很多 GAE 数据迁移方面的经验。这些经验我会在 PB3 上线之后逐步写出来分享给大家。\u000D\u000A\u002D 如果你有项目想从 GAE 上搬走，那么只要花上几天时间，事情还是可以处理得很完美的。\u000D\u000A\u000D\u000A感谢最近和我一起奋斗在这个项目上的 @Kai",
+        "content_rendered" : "\u002D PB3 主体功能完成度 90%。\u000D\u003Cbr /\u003E\u002D 目前正在进行中的是数据迁移脚本。目标是实现一键完美迁移，用时会主要取决于网速。GAE 的 bulkloader 接口还是挺靠谱的。\u000D\u003Cbr /\u003E\u002D 在这个过程中，积累了很多 GAE 数据迁移方面的经验。这些经验我会在 PB3 上线之后逐步写出来分享给大家。\u000D\u003Cbr /\u003E\u002D 如果你有项目想从 GAE 上搬走，那么只要花上几天时间，事情还是可以处理得很完美的。\u000D\u003Cbr /\u003E\u000D\u003Cbr /\u003E感谢最近和我一起奋斗在这个项目上的 @\u003Ca href\u003D\u0022/member/Kai\u0022\u003EKai\u003C/a\u003E",
+        "replies" : 17,
+        "member" : {
+            "id" : 1,
+            "username" : "Livid"
+        },
+        "node" : {
+            "id" : 1,
+            "name" : "babel",
+            "title" : "Project Babel",
+            "url" : "http://www.v2ex.com/go/babel",
+            "topics" : 800
+        },
+        "created" : "2012-04-18 03:05:53.905139",
+        "last_modified" : "2012-04-19 05:29:40.866366",
+        "last_touched" : "2012-04-19 02:42:46.199872"
+    }
+    
+    ,
+    {
+        "id" : 32510,
+        "title" : "#MadeWithPaper",
+        "url" : "http://www.v2ex.com/t/32510",
+        "content" : "在 Twitter 搜索 #MadeWithPaper 就可以看到别人用 Paper 画的作品了。:)",
+        "content_rendered" : "在 Twitter 搜索 #MadeWithPaper 就可以看到别人用 Paper 画的作品了。:)",
+        "replies" : 4,
+        "member" : {
+            "id" : 1,
+            "username" : "Livid"
+        },
+        "node" : {
+            "id" : 525,
+            "name" : "paper",
+            "title" : "Paper",
+            "url" : "http://www.v2ex.com/go/paper",
+            "topics" : 9
+        },
+        "created" : "2012-04-17 22:50:08.366110",
+        "last_modified" : "2012-04-19 05:25:43.717950",
+        "last_touched" : "2012-04-18 05:13:40.022689"
+    }
+    
+    ,
+    {
+        "id" : 32499,
+        "title" : "Read It Later 新版上线，更名为 Pocket",
+        "url" : "http://www.v2ex.com/t/32499",
+        "content" : "http://getpocket.com/",
+        "content_rendered" : "\u003Ca href\u003D\u0022http://getpocket.com/\u0022 target\u003D\u0022_blank\u0022\u003Ehttp://getpocket.com/\u003C/a\u003E",
+        "replies" : 24,
+        "member" : {
+            "id" : 1,
+            "username" : "Livid"
+        },
+        "node" : {
+            "id" : 8,
+            "name" : "iphone",
+            "title" : "iPhone",
+            "url" : "http://www.v2ex.com/go/iphone",
+            "topics" : 697
+        },
+        "created" : "2012-04-17 14:57:14.280622",
+        "last_modified" : "2012-04-19 04:00:00.769944",
+        "last_touched" : "2012-04-18 07:32:35.182391"
+    }
+    
+    ,
+    {
+        "id" : 32434,
+        "title" : "Battleship 今晚上映",
+        "url" : "http://www.v2ex.com/t/32434",
+        "content" : "http://trailers.apple.com/trailers/universal/battleship/\u000D\u000A\u000D\u000Ahttp://theater.mtime.com/China_Shanghai/movie/114508/\u000D\u000A\u000D\u000A:D",
+        "content_rendered" : "\u003Ca href\u003D\u0022http://trailers.apple.com/trailers/universal/battleship/\u0022 target\u003D\u0022_blank\u0022\u003Ehttp://trailers.apple.com/trailers/universal/battleship/\u003C/a\u003E\u000D\u003Cbr /\u003E\u000D\u003Cbr /\u003E\u003Ca href\u003D\u0022http://theater.mtime.com/China_Shanghai/movie/114508/\u0022 target\u003D\u0022_blank\u0022\u003Ehttp://theater.mtime.com/China_Shanghai/movie/114508/\u003C/a\u003E\u000D\u003Cbr /\u003E\u000D\u003Cbr /\u003E:D",
+        "replies" : 23,
+        "member" : {
+            "id" : 1,
+            "username" : "Livid"
+        },
+        "node" : {
+            "id" : 5,
+            "name" : "movie",
+            "title" : "电影",
+            "url" : "http://www.v2ex.com/go/movie",
+            "topics" : 189
+        },
+        "created" : "2012-04-17 00:39:33.788177",
+        "last_modified" : "2012-04-19 05:21:02.866908",
+        "last_touched" : "2012-04-19 03:21:13.910838"
+    }
+    
+    ,
+    {
+        "id" : 32431,
+        "title" : "网络媒体 Huffington Post 第一次获得普利策奖",
+        "url" : "http://www.v2ex.com/t/32431",
+        "content" : "http://www.huffingtonpost.com/2012/04/16/huffington\u002Dpost\u002Dpulitzer\u002Dprize\u002D2012_n_1429169.html",
+        "content_rendered" : "\u003Ca href\u003D\u0022http://www.huffingtonpost.com/2012/04/16/huffington\u002Dpost\u002Dpulitzer\u002Dprize\u002D2012_n_1429169.html\u0022 target\u003D\u0022_blank\u0022\u003Ehttp://www.huffingtonpost.com/2012/04/16/huffington\u002Dpost\u002Dpulitzer\u002Dprize\u002D2012_n_1429169.html\u003C/a\u003E",
+        "replies" : 1,
+        "member" : {
+            "id" : 1,
+            "username" : "Livid"
+        },
+        "node" : {
+            "id" : 440,
+            "name" : "media",
+            "title" : "媒体",
+            "url" : "http://www.v2ex.com/go/media",
+            "topics" : 8
+        },
+        "created" : "2012-04-16 20:46:20.369053",
+        "last_modified" : "2012-04-19 02:39:20.666905",
+        "last_touched" : "2012-04-16 21:27:24.040652"
+    }
+    
+    ,
+    {
+        "id" : 32416,
+        "title" : "目前有谁在用 PB2 的 API？",
+        "url" : "http://www.v2ex.com/t/32416",
+        "content" : "我们计划对 PB3 中的 API 进行一些升级。\u000D\u000A\u000D\u000A届时可能有些 API 接口输出的 JSON 内容结构会发生改变。\u000D\u000A\u000D\u000A如果你对 API 接口有任何的建议，可以反馈到 /go/api 这里。\u000D\u000A\u000D\u000A谢谢。",
+        "content_rendered" : "我们计划对 PB3 中的 API 进行一些升级。\u000D\u003Cbr /\u003E\u000D\u003Cbr /\u003E届时可能有些 API 接口输出的 JSON 内容结构会发生改变。\u000D\u003Cbr /\u003E\u000D\u003Cbr /\u003E如果你对 API 接口有任何的建议，可以反馈到 \u003Ca href\u003D\u0022/go/api\u0022\u003E/go/api\u003C/a\u003E 这里。\u000D\u003Cbr /\u003E\u000D\u003Cbr /\u003E谢谢。",
+        "replies" : 7,
+        "member" : {
+            "id" : 1,
+            "username" : "Livid"
+        },
+        "node" : {
+            "id" : 307,
+            "name" : "api",
+            "title" : "API",
+            "url" : "http://www.v2ex.com/go/api",
+            "topics" : 6
+        },
+        "created" : "2012-04-16 15:05:34.987164",
+        "last_modified" : "2012-04-19 03:43:00.904008",
+        "last_touched" : "2012-04-17 03:52:14.215146"
+    }
+    
+    ,
+    {
+        "id" : 32414,
+        "title" : "关于在设计 API 时的一个考虑",
+        "url" : "http://www.v2ex.com/t/32414",
+        "content" : "如果用户请求的时候提交了错误的参数，这个时候服务器端无法满足用户的需求，需要返回一个错误页面。\u000D\u000A\u000D\u000A假设 API 是 JSON 格式的，那么大家做为开发者，会希望服务器端如何通知这个错误呢？\u000D\u000A\u000D\u000A目前考虑的几种做法：\u000D\u000A\u000D\u000A1. 返回 HTTP 400 Bad Request 状态。\u000D\u000A\u000D\u000A2. 在所有的 JSON 反馈中都加入这样的设定：\u000D\u000A\u000D\u000A{\u000D\u000A\u0022status\u0022 : \u0022error\u0022\u000D\u000A}\u000D\u000A\u000D\u000A或\u000D\u000A\u000D\u000A{\u000D\u000A\u0022status\u0022 : \u0022ok\u0022\u000D\u000A}\u000D\u000A\u000D\u000A期待大家对这个问题的建议。",
+        "content_rendered" : "如果用户请求的时候提交了错误的参数，这个时候服务器端无法满足用户的需求，需要返回一个错误页面。\u000D\u003Cbr /\u003E\u000D\u003Cbr /\u003E假设 API 是 JSON 格式的，那么大家做为开发者，会希望服务器端如何通知这个错误呢？\u000D\u003Cbr /\u003E\u000D\u003Cbr /\u003E目前考虑的几种做法：\u000D\u003Cbr /\u003E\u000D\u003Cbr /\u003E1. 返回 HTTP 400 Bad Request 状态。\u000D\u003Cbr /\u003E\u000D\u003Cbr /\u003E2. 在所有的 JSON 反馈中都加入这样的设定：\u000D\u003Cbr /\u003E\u000D\u003Cbr /\u003E{\u000D\u003Cbr /\u003E\u0026quot\u003Bstatus\u0026quot\u003B : \u0026quot\u003Berror\u0026quot\u003B\u000D\u003Cbr /\u003E}\u000D\u003Cbr /\u003E\u000D\u003Cbr /\u003E或\u000D\u003Cbr /\u003E\u000D\u003Cbr /\u003E{\u000D\u003Cbr /\u003E\u0026quot\u003Bstatus\u0026quot\u003B : \u0026quot\u003Bok\u0026quot\u003B\u000D\u003Cbr /\u003E}\u000D\u003Cbr /\u003E\u000D\u003Cbr /\u003E期待大家对这个问题的建议。",
+        "replies" : 50,
+        "member" : {
+            "id" : 1,
+            "username" : "Livid"
+        },
+        "node" : {
+            "id" : 307,
+            "name" : "api",
+            "title" : "API",
+            "url" : "http://www.v2ex.com/go/api",
+            "topics" : 6
+        },
+        "created" : "2012-04-16 14:57:00.860725",
+        "last_modified" : "2012-04-19 05:04:24.126670",
+        "last_touched" : "2012-04-18 05:26:55.287954"
+    }
+    
+    ,
+    {
+        "id" : 32332,
+        "title" : "色卡女皇",
+        "url" : "http://www.v2ex.com/t/32332",
+        "content" : "http://ww2.sinaimg.cn/large/639aa51bjw1drycvpjhouj.jpg",
+        "content_rendered" : "\u003Ca href\u003D\u0022http://ww2.sinaimg.cn/large/639aa51bjw1drycvpjhouj.jpg\u0022 target\u003D\u0022_blank\u0022\u003E\u003Cimg src\u003D\u0022http://ww2.sinaimg.cn/large/639aa51bjw1drycvpjhouj.jpg\u0022 class\u003D\u0022imgly\u0022 border\u003D\u00220\u0022 /\u003E\u003C/a\u003E",
+        "replies" : 2,
+        "member" : {
+            "id" : 1,
+            "username" : "Livid"
+        },
+        "node" : {
+            "id" : 215,
+            "name" : "design",
+            "title" : "设计",
+            "url" : "http://www.v2ex.com/go/design",
+            "topics" : 119
+        },
+        "created" : "2012-04-15 16:28:33.873834",
+        "last_modified" : "2012-04-19 02:39:23.671444",
+        "last_touched" : "2012-04-15 17:27:18.769932"
+    }
+    
+    ,
+    {
+        "id" : 32248,
+        "title" : "9GAG",
+        "url" : "http://www.v2ex.com/t/32248",
+        "content" : "http://9gag.com/\u000D\u000A\u000D\u000A貌似，是一个国际版的糗事百科 + 煎蛋？\u000D\u000A\u000D\u000A流量巨大啊……",
+        "content_rendered" : "\u003Ca href\u003D\u0022http://9gag.com/\u0022 target\u003D\u0022_blank\u0022\u003Ehttp://9gag.com/\u003C/a\u003E\u000D\u003Cbr /\u003E\u000D\u003Cbr /\u003E貌似，是一个国际版的糗事百科 + 煎蛋？\u000D\u003Cbr /\u003E\u000D\u003Cbr /\u003E流量巨大啊……",
+        "replies" : 22,
+        "member" : {
+            "id" : 1,
+            "username" : "Livid"
+        },
+        "node" : {
+            "id" : 16,
+            "name" : "share",
+            "title" : "分享发现",
+            "url" : "http://www.v2ex.com/go/share",
+            "topics" : 3680
+        },
+        "created" : "2012-04-14 10:11:20.241246",
+        "last_modified" : "2012-04-19 04:07:35.627471",
+        "last_touched" : "2012-04-16 09:10:20.174895"
+    }
+    
+    ,
+    {
+        "id" : 32225,
+        "title" : "@MrDunhao",
+        "url" : "http://www.v2ex.com/t/32225",
+        "content" : "V2EX 建立节点的目的，是为了能够引导一类话题可以被更多的发布。\u000D\u000A\u000D\u000A部分特殊节点是为了处理特殊的不是特别有价值的信息，比如 /go/flood 和 /go/flamewar 。\u000D\u000A\u000D\u000A所以，如果一类话题，不是我们希望引导的话，是不会在这里建立节点的。",
+        "content_rendered" : "V2EX 建立节点的目的，是为了能够引导一类话题可以被更多的发布。\u000D\u003Cbr /\u003E\u000D\u003Cbr /\u003E部分特殊节点是为了处理特殊的不是特别有价值的信息，比如 \u003Ca href\u003D\u0022/go/flood\u0022\u003E/go/flood\u003C/a\u003E 和 \u003Ca href\u003D\u0022/go/flamewar\u0022\u003E/go/flamewar\u003C/a\u003E 。\u000D\u003Cbr /\u003E\u000D\u003Cbr /\u003E所以，如果一类话题，不是我们希望引导的话，是不会在这里建立节点的。",
+        "replies" : 0,
+        "member" : {
+            "id" : 1,
+            "username" : "Livid"
+        },
+        "node" : {
+            "id" : 364,
+            "name" : "chamber",
+            "title" : "Chamber",
+            "url" : "http://www.v2ex.com/go/chamber",
+            "topics" : 25
+        },
+        "created" : "2012-04-14 04:59:07.448442",
+        "last_modified" : "2012-04-19 04:01:32.156706",
+        "last_touched" : "2012-04-14 04:59:07.918582"
+    }
+    
+    ,
+    {
+        "id" : 32158,
+        "title" : "原来 Meteor 的创始团队是……",
+        "url" : "http://www.v2ex.com/t/32158",
+        "content" : "http://www.meteor.com/about/people\u000D\u000A\u000D\u000AGeoff Schmidt \u002D Asana 的第 9 号员工，参与了 Luna 的开发（或者 Luna 其实就是他的作品？）\u000D\u000A\u000D\u000ADavid Greenspan \u002D Etherpad 的作者，Etherpad 卖给 Google 之后，参与过 Google Wave 和 App Engine……",
+        "content_rendered" : "\u003Ca href\u003D\u0022http://www.meteor.com/about/people\u0022 target\u003D\u0022_blank\u0022\u003Ehttp://www.meteor.com/about/people\u003C/a\u003E\u000D\u003Cbr /\u003E\u000D\u003Cbr /\u003EGeoff Schmidt \u002D Asana 的第 9 号员工，参与了 Luna 的开发（或者 Luna 其实就是他的作品？）\u000D\u003Cbr /\u003E\u000D\u003Cbr /\u003EDavid Greenspan \u002D Etherpad 的作者，Etherpad 卖给 Google 之后，参与过 Google Wave 和 App Engine……",
+        "replies" : 9,
+        "member" : {
+            "id" : 1,
+            "username" : "Livid"
+        },
+        "node" : {
+            "id" : 530,
+            "name" : "meteor",
+            "title" : "Meteor",
+            "url" : "http://www.v2ex.com/go/meteor",
+            "topics" : 9
+        },
+        "created" : "2012-04-13 07:51:21.976842",
+        "last_modified" : "2012-04-19 02:14:47.577720",
+        "last_touched" : "2012-04-13 14:36:59.427835"
+    }
+    
+    ,
+    {
+        "id" : 32140,
+        "title" : "腾讯 4000 万收购 DNSPod",
+        "url" : "http://www.v2ex.com/t/32140",
+        "content" : "http://www.rtdot.com/news/722\u000D\u000A\u000D\u000A坚持做自己喜欢的，有价值的事情吧。:)",
+        "content_rendered" : "\u003Ca href\u003D\u0022http://www.rtdot.com/news/722\u0022 target\u003D\u0022_blank\u0022\u003Ehttp://www.rtdot.com/news/722\u003C/a\u003E\u000D\u003Cbr /\u003E\u000D\u003Cbr /\u003E坚持做自己喜欢的，有价值的事情吧。:)",
+        "replies" : 20,
+        "member" : {
+            "id" : 1,
+            "username" : "Livid"
+        },
+        "node" : {
+            "id" : 16,
+            "name" : "share",
+            "title" : "分享发现",
+            "url" : "http://www.v2ex.com/go/share",
+            "topics" : 3680
+        },
+        "created" : "2012-04-13 04:44:12.102271",
+        "last_modified" : "2012-04-19 03:38:41.008698",
+        "last_touched" : "2012-04-13 14:10:09.076341"
+    }
+    
+    ,
+    {
+        "id" : 32131,
+        "title" : "Scaling Instagram",
+        "url" : "http://www.v2ex.com/t/32131",
+        "content" : "Instagram 的 Co\u002Dfounder 分享的发展历程和经验：\u000D\u000A\u000D\u000Ahttp://www.scribd.com/fullscreen/89025069",
+        "content_rendered" : "Instagram 的 Co\u002Dfounder 分享的发展历程和经验：\u000D\u003Cbr /\u003E\u000D\u003Cbr /\u003E\u003Ca href\u003D\u0022http://www.scribd.com/fullscreen/89025069\u0022 target\u003D\u0022_blank\u0022\u003Ehttp://www.scribd.com/fullscreen/89025069\u003C/a\u003E",
+        "replies" : 2,
+        "member" : {
+            "id" : 1,
+            "username" : "Livid"
+        },
+        "node" : {
+            "id" : 300,
+            "name" : "programmer",
+            "title" : "程序员",
+            "url" : "http://www.v2ex.com/go/programmer",
+            "topics" : 462
+        },
+        "created" : "2012-04-13 03:17:56.563836",
+        "last_modified" : "2012-04-19 05:23:30.654317",
+        "last_touched" : "2012-04-13 03:39:55.915301"
+    }
+    
+    ,
+    {
+        "id" : 32115,
+        "title" : "如果你打算开发下一代的 web app，你应该关注 Meteor",
+        "url" : "http://www.v2ex.com/t/32115",
+        "content" : "Meteor 是一个全新的 JavaScript 实时框架。\u000D\u000A\u000D\u000Ahttp://www.meteor.com/\u000D\u000A\u000D\u000A即使你不在你的下一个新项目中使用 Meteor，你也可以从它的设计、实现和哲学中得到收获。\u000D\u000A\u000D\u000A向大家强烈推荐。",
+        "content_rendered" : "Meteor 是一个全新的 JavaScript 实时框架。\u000D\u003Cbr /\u003E\u000D\u003Cbr /\u003E\u003Ca href\u003D\u0022http://www.meteor.com/\u0022 target\u003D\u0022_blank\u0022\u003Ehttp://www.meteor.com/\u003C/a\u003E\u000D\u003Cbr /\u003E\u000D\u003Cbr /\u003E即使你不在你的下一个新项目中使用 Meteor，你也可以从它的设计、实现和哲学中得到收获。\u000D\u003Cbr /\u003E\u000D\u003Cbr /\u003E向大家强烈推荐。",
+        "replies" : 13,
+        "member" : {
+            "id" : 1,
+            "username" : "Livid"
+        },
+        "node" : {
+            "id" : 530,
+            "name" : "meteor",
+            "title" : "Meteor",
+            "url" : "http://www.v2ex.com/go/meteor",
+            "topics" : 9
+        },
+        "created" : "2012-04-12 20:44:43.924683",
+        "last_modified" : "2012-04-19 02:24:43.173526",
+        "last_touched" : "2012-04-13 03:45:25.314159"
+    }
+    
+    ,
+    {
+        "id" : 32114,
+        "title" : "在 WoW 里创建一个工会的价格是？",
+        "url" : "http://www.v2ex.com/t/32114",
+        "content" : "",
+        "content_rendered" : "",
+        "replies" : 17,
+        "member" : {
+            "id" : 1,
+            "username" : "Livid"
+        },
+        "node" : {
+            "id" : 378,
+            "name" : "wow",
+            "title" : "World of Warcraft",
+            "url" : "http://www.v2ex.com/go/wow",
+            "topics" : 26
+        },
+        "created" : "2012-04-12 20:31:38.694832",
+        "last_modified" : "2012-04-19 03:44:23.116002",
+        "last_touched" : "2012-04-14 06:01:09.628784"
+    }
+    
+    ,
+    {
+        "id" : 32113,
+        "title" : "如果 V2EX 在 profile 设置中增加对 Instagram 的支持，那么应该链接到什么地方呢？",
+        "url" : "http://www.v2ex.com/t/32113",
+        "content" : "",
+        "content_rendered" : "",
+        "replies" : 5,
+        "member" : {
+            "id" : 1,
+            "username" : "Livid"
+        },
+        "node" : {
+            "id" : 435,
+            "name" : "instagram",
+            "title" : "Instagram",
+            "url" : "http://www.v2ex.com/go/instagram",
+            "topics" : 4
+        },
+        "created" : "2012-04-12 20:15:20.817160",
+        "last_modified" : "2012-04-18 21:15:17.121935",
+        "last_touched" : "2012-04-16 04:07:13.246026"
+    }
+    
+    ,
+    {
+        "id" : 32112,
+        "title" : "Seven Principles of Meteor",
+        "url" : "http://www.v2ex.com/t/32112",
+        "content" : "一个好项目的背后是深刻的哲学。\u000D\u000A\u000D\u000Ahttp://docs.meteor.com/#sevenprinciples\u000D\u000A\u000D\u000A• Data on the Wire. Don\u0027t send HTML over the network. Send data and let the client decide how to render it.\u000D\u000A\u000D\u000A• One Language. Write both the client and the server parts of your interface in JavaScript.\u000D\u000A\u000D\u000A• Database Everywhere. Use the same transparent API to access your database from the client or the server.\u000D\u000A\u000D\u000A• Latency Compensation. On the client, use prefetching and model simulation to make it look like you have a zero\u002Dlatency connection to the database.\u000D\u000A\u000D\u000A• Full Stack Reactivity. Make realtime the default. All layers, from database to template, should make an event\u002Ddriven interface available.\u000D\u000A\u000D\u000A• Embrace the Ecosystem. Meteor is open source and integrates, rather than replaces, existing open source tools and frameworks.\u000D\u000A\u000D\u000A• Simplicity Equals Productivity. The best way to make something seem simple is to have it actually be simple. Accomplish this through clean, classically beautiful APIs.",
+        "content_rendered" : "一个好项目的背后是深刻的哲学。\u000D\u003Cbr /\u003E\u000D\u003Cbr /\u003E\u003Ca href\u003D\u0022http://docs.meteor.com/#sevenprinciples\u0022 target\u003D\u0022_blank\u0022\u003Ehttp://docs.meteor.com/#sevenprinciples\u003C/a\u003E\u000D\u003Cbr /\u003E\u000D\u003Cbr /\u003E• Data on the Wire. Don\u0026#39\u003Bt send HTML over the network. Send data and let the client decide how to render it.\u000D\u003Cbr /\u003E\u000D\u003Cbr /\u003E• One Language. Write both the client and the server parts of your interface in JavaScript.\u000D\u003Cbr /\u003E\u000D\u003Cbr /\u003E• Database Everywhere. Use the same transparent API to access your database from the client or the server.\u000D\u003Cbr /\u003E\u000D\u003Cbr /\u003E• Latency Compensation. On the client, use prefetching and model simulation to make it look like you have a zero\u002Dlatency connection to the database.\u000D\u003Cbr /\u003E\u000D\u003Cbr /\u003E• Full Stack Reactivity. Make realtime the default. All layers, from database to template, should make an event\u002Ddriven interface available.\u000D\u003Cbr /\u003E\u000D\u003Cbr /\u003E• Embrace the Ecosystem. Meteor is open source and integrates, rather than replaces, existing open source tools and frameworks.\u000D\u003Cbr /\u003E\u000D\u003Cbr /\u003E• Simplicity Equals Productivity. The best way to make something seem simple is to have it actually be simple. Accomplish this through clean, classically beautiful APIs.",
+        "replies" : 3,
+        "member" : {
+            "id" : 1,
+            "username" : "Livid"
+        },
+        "node" : {
+            "id" : 530,
+            "name" : "meteor",
+            "title" : "Meteor",
+            "url" : "http://www.v2ex.com/go/meteor",
+            "topics" : 9
+        },
+        "created" : "2012-04-12 20:10:18.253076",
+        "last_modified" : "2012-04-18 12:33:06.024123",
+        "last_touched" : "2012-04-13 02:36:12.558752"
+    }
+    
+    ,
+    {
+        "id" : 32111,
+        "title" : "Meteor 自带的这个 Todos 如果继续开发下去的话，感觉很不错",
+        "url" : "http://www.v2ex.com/t/32111",
+        "content" : "http://www.meteor.com/examples/todos\u000D\u000A\u000D\u000A可以在内网里启动之后，就变成一个很好的协作工具。\u000D\u000A\u000D\u000A如果是在外网的话，加上某种验证机制，那也是很赞的东西啊。",
+        "content_rendered" : "\u003Ca href\u003D\u0022http://www.meteor.com/examples/todos\u0022 target\u003D\u0022_blank\u0022\u003Ehttp://www.meteor.com/examples/todos\u003C/a\u003E\u000D\u003Cbr /\u003E\u000D\u003Cbr /\u003E可以在内网里启动之后，就变成一个很好的协作工具。\u000D\u003Cbr /\u003E\u000D\u003Cbr /\u003E如果是在外网的话，加上某种验证机制，那也是很赞的东西啊。",
+        "replies" : 4,
+        "member" : {
+            "id" : 1,
+            "username" : "Livid"
+        },
+        "node" : {
+            "id" : 530,
+            "name" : "meteor",
+            "title" : "Meteor",
+            "url" : "http://www.v2ex.com/go/meteor",
+            "topics" : 9
+        },
+        "created" : "2012-04-12 20:03:18.830089",
+        "last_modified" : "2012-04-19 02:13:05.512478",
+        "last_touched" : "2012-04-13 03:18:55.109836"
+    }
+    
+    ,
+    {
+        "id" : 32022,
+        "title" : "TextWrangler 4.0 推出",
+        "url" : "http://www.v2ex.com/t/32022",
+        "content" : "http://barebones.com/products/textwrangler/",
+        "content_rendered" : "\u003Ca href\u003D\u0022http://barebones.com/products/textwrangler/\u0022 target\u003D\u0022_blank\u0022\u003Ehttp://barebones.com/products/textwrangler/\u003C/a\u003E",
+        "replies" : 6,
+        "member" : {
+            "id" : 1,
+            "username" : "Livid"
+        },
+        "node" : {
+            "id" : 22,
+            "name" : "macosx",
+            "title" : "Mac OS X",
+            "url" : "http://www.v2ex.com/go/macosx",
+            "topics" : 815
+        },
+        "created" : "2012-04-11 18:57:30.827863",
+        "last_modified" : "2012-04-19 01:00:35.283709",
+        "last_touched" : "2012-04-16 16:01:08.555703"
+    }
+    
+]
+

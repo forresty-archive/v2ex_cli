@@ -7,14 +7,58 @@ require 'commander/import'
 program :version, V2exCli::VERSION
 program :description, 'command line interface to v2ex.com'
 
+global_option('--verbose') { $verbose = true }
+
 command :latest do |c|
   c.syntax = 'v2ex latest'
   c.description = 'list latest topics'
   c.action do |args, options|
-    V2exCli::Engine.latest.each do |topic|
-      puts "#{topic[:id]}\t#{topic[:title]}"
+    puts "latest topics:"
+    V2exCli::Engine.latest.each { |topic| print_topic(topic) }
+  end
+end
+
+command :topic do |c|
+  c.syntax = 'v2ex topic TOPIC_ID'
+  c.description = 'show a topic and its replies'
+  c.action do |args, options|
+    topic_id = args.first.to_i
+    print_topic V2exCli::Engine.topic(topic_id)
+    print "\nreplies:\n\n"
+    V2exCli::Engine.replies(topic_id).each do |reply|
+      puts "#{reply[:member][:username]} ".ljust(25, '-')
+      print "#{reply[:content]}\n\n"
     end
   end
 end
 
+command :topics do |c|
+  c.syntax = 'v2ex topics OPTIONS'
+  c.description = 'show topics of a user or a node'
+  c.option '--user USERNAME', String, 'specify a username'
+  c.option '--node NODE_NAME', String, 'specify a node_name'
+  c.action do |args, options|
+    options.default :user => '', :node => ''
+    if options.user == '' && options.node == ''
+      puts "usage: v2ex topics --user USERNAME or v2ex topics --node NODE_NAME"
+      print "listing all latest topics\n\n"
+      topics = V2exCli::Engine.latest
+    elsif options.user != ''
+      print "latest topics by @#{options.user}:\n\n"
+      topics = V2exCli::Engine.user_topics(options.user)
+    else
+      print "latest topics under #{options.node}:\n\n"
+      topics = V2exCli::Engine.node_topics(options.node)
+    end
+    topics.each { |topic| print_topic(topic) }
+  end
+end
+
+def print_topic(topic)
+  puts topic[:id].to_s.ljust(7) + topic[:member][:username].ljust(13) + topic[:replies].to_s.ljust(4) + topic[:title]
+end
+
 alias_command :l, :latest
+alias_command :t, :topic
+
+default_command :latest
