@@ -7,11 +7,17 @@ require 'commander/import'
 program :version, V2exCli::VERSION
 program :description, 'command line interface to v2ex.com'
 
+global_option('--succinct', '-s') { $succinct = true }
+
+def info(message)
+  print "#{message}\n" unless $succinct
+end
+
 command :latest do |c|
   c.syntax = 'v2ex latest'
   c.description = 'list latest topics'
   c.action do |args, options|
-    puts "latest topics:"
+    info "latest topics:"
     V2exCli::Engine.latest.each { |topic| print_topic(topic) }
   end
 end
@@ -21,8 +27,8 @@ command :topic do |c|
   c.description = 'show a topic and its replies'
   c.action do |args, options|
     topic_id = args.first.to_i
-    print_topic V2exCli::Engine.topic(topic_id)
-    print "\nreplies:\n\n"
+    print_topic V2exCli::Engine.topic(topic_id), :show_content => true
+    info "\nreplies:\n"
     V2exCli::Engine.replies(topic_id).each do |reply|
       puts "#{reply[:member][:username]} ".ljust(25, '-')
       print "#{reply[:content]}\n\n"
@@ -30,31 +36,21 @@ command :topic do |c|
   end
 end
 
-command :topics do |c|
-  c.syntax = 'v2ex topics OPTIONS'
-  c.description = 'show topics of a user or a node'
-  c.option '--user USERNAME', String, 'specify a username'
-  c.option '--node NODE_NAME', String, 'specify a node_name'
-
+command :user_topics do |c|
+  c.syntax = 'v2ex user_topics OPTIONS'
+  c.description = 'show topics of a user'
   c.action do |args, options|
-    options.default :user => '', :node => ''
+    info "latest topics by @#{args.first}:\n"
+    V2exCli::Engine.user_topics(args.first).each { |topic| print_topic(topic) }
+  end
+end
 
-    topics = if options.user == '' && options.node == ''
-      puts "usage: v2ex topics --user USERNAME or v2ex topics --node NODE_NAME"
-      print "listing all latest topics\n\n"
-
-      V2exCli::Engine.latest
-    elsif options.user != ''
-      print "latest topics by @#{options.user}:\n\n"
-
-      V2exCli::Engine.user_topics(options.user)
-    else
-      print "latest topics under #{options.node}:\n\n"
-
-      V2exCli::Engine.node_topics(options.node)
-    end
-
-    topics.each { |topic| print_topic(topic) }
+command :node_topics do |c|
+  c.syntax = 'v2ex node_topics OPTIONS'
+  c.description = 'show topics of a node'
+  c.action do |args, options|
+    info "latest topics under #{args.first}:\n"
+    V2exCli::Engine.node_topics(args.first).each { |topic| print_topic(topic) }
   end
 end
 
@@ -74,7 +70,7 @@ command :nodes do |c|
   c.syntax = 'v2ex nodes'
   c.description = 'list all nodes'
   c.action do |args, options|
-    print "listing all nodes:\n\n"
+    info "listing all nodes:\n"
     V2exCli::Engine.nodes.each { |node| puts node[:name].ljust(12) + node[:title] }
   end
 end
@@ -85,13 +81,15 @@ def print_user_meta(user)
   end
 end
 
-def print_topic(topic)
+def print_topic(topic, options={ :show_content => false })
   puts topic[:id].to_s.ljust(7) + topic[:member][:username].ljust(13) + topic[:replies].to_s.ljust(4) + topic[:title]
+  puts "\n#{topic[:content]}" if options[:show_content]
 end
 
 alias_command :l, :latest
 alias_command :t, :topic
-alias_command :s, :topics
+alias_command :ut, :user_topics
+alias_command :nt, :node_topics
 alias_command :u, :user
 alias_command :n, :nodes
 

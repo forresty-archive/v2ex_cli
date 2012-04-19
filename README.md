@@ -24,11 +24,11 @@ Show a topic and its replies
 
 List topics of a user
 
-    v2ex topics --user livid
+    v2ex ut livid
 
 List topics of a node
 
-    v2ex topics --node xbox360
+    v2ex nt xbox360
 
 Show user info
 
@@ -44,6 +44,7 @@ For more information, pass --help
 
 ## TODO
 
+Commands to open web pages to topics/users/nodes etc
 REPL mode (Read, Eval, Print, Loop)
 
 ## Contributing
