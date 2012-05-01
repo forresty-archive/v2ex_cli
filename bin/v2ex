@@ -9,6 +9,8 @@ program :description, 'command line interface to v2ex.com'
 
 global_option('--succinct', '-s') { $succinct = true }
 
+@engine = V2exCli::Engine.new
+
 def info(message)
   print "#{message}\n" unless $succinct
 end
@@ -18,7 +20,7 @@ command :latest do |c|
   c.description = 'list latest topics'
   c.action do |args, options|
     info "latest topics:"
-    V2exCli::Engine.latest.each { |topic| print_topic(topic) }
+    @engine.latest.each { |topic| print_topic(topic) }
   end
 end
 
@@ -27,8 +29,8 @@ command :topic do |c|
   c.description = 'show a topic and its replies'
   c.action do |args, options|
     topic_id = args.first.to_i
-    print_topic V2exCli::Engine.topic(topic_id), :show_content => true
-    print_topic_replies V2exCli::Engine.replies(topic_id)
+    print_topic @engine.topic(topic_id), :show_content => true
+    print_topic_replies @engine.replies(topic_id)
   end
 end
 
@@ -37,7 +39,7 @@ command :user_topics do |c|
   c.description = 'show topics of a user'
   c.action do |args, options|
     info "latest topics by @#{args.first}:\n"
-    V2exCli::Engine.user_topics(args.first).each { |topic| print_topic(topic) }
+    @engine.user_topics(args.first).each { |topic| print_topic(topic) }
   end
 end
 
@@ -46,7 +48,7 @@ command :node_topics do |c|
   c.description = 'show topics of a node'
   c.action do |args, options|
     info "latest topics under #{args.first}:\n"
-    V2exCli::Engine.node_topics(args.first).each { |topic| print_topic(topic) }
+    @engine.node_topics(args.first).each { |topic| print_topic(topic) }
   end
 end
 
@@ -54,7 +56,7 @@ command :user do |c|
   c.syntax = 'v2ex user USERNAME'
   c.description = 'show user info'
   c.action do |args, options|
-    print_user_meta V2exCli::Engine.user_info(args.first)
+    print_user_meta @engine.user_info(args.first)
   end
 end
 
@@ -77,7 +79,7 @@ command :nodes do |c|
   c.description = 'list all nodes'
   c.action do |args, options|
     info "listing all nodes:\n"
-    V2exCli::Engine.nodes.each { |node| puts node[:name].ljust(12) + node[:title] }
+    @engine.nodes.each { |node| puts node[:name].ljust(12) + node[:title] }
   end
 end
 
