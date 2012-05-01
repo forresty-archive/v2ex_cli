@@ -20,5 +20,5 @@ Gem::Specification.new do |gem|
   gem.add_development_dependency "simplecov"
 
   gem.add_runtime_dependency "commander"
-  gem.add_runtime_dependency "json"
+  gem.add_runtime_dependency "eggroll"
 end

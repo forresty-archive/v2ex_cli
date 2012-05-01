@@ -1,4 +1,6 @@
+
 {
+    "status" : "found",
     "id" : 1,
     "url" : "http://www.v2ex.com/member/Livid",
     "username" : "Livid",
@@ -6,21 +8,9 @@
     "twitter" : "Livid",
     "location" : "China",
     "tagline" : "Beautifully Advance",
-    "bio" : "What it lies in our power to do, it lies in our power not to do.
-
-黑魔法，白魔法，树蛇，紧靠翡翠森林的静默之湖。
-
-高兴的时候不做承诺，愤怒的时候不做决定。
-
-未来不迎，既过不恋，当时不杂。
-
-天然存在的放射性同位素主要是恆星的內部。例如鈾，在星體內直接被形成。
-
-梦想般的人生就是，一直在做梦想中的事情。
-
-当他回首往事的时候，不因虚度年华而悔恨，也不因碌碌无为而羞耻。",
-    "avatar_mini" : "http://web.me.com/v2ex.livid/v2ex/avatars/1/mini/1.png?r=1333719010",
-    "avatar_normal" : "http://web.me.com/v2ex.livid/v2ex/avatars/1/normal/1.png?r=1333719010",
-    "avatar_large" : "http://web.me.com/v2ex.livid/v2ex/avatars/1/large/1.png?r=1333719010",
-    "created" : "2010-04-25 13:45:46.465867"
+    "bio" : "What it lies in our power to do, it lies in our power not to do.\u000D\u000A\u000D\u000A黑魔法，白魔法，树蛇，紧靠翡翠森林的静默之湖。\u000D\u000A\u000D\u000A高兴的时候不做承诺，愤怒的时候不做决定。\u000D\u000A\u000D\u000A未来不迎，既过不恋，当时不杂。\u000D\u000A\u000D\u000A天然存在的放射性同位素主要是恆星的內部。例如鈾，在星體內直接被形成。\u000D\u000A\u000D\u000A梦想般的人生就是，一直在做梦想中的事情。\u000D\u000A\u000D\u000A当他回首往事的时候，不因虚度年华而悔恨，也不因碌碌无为而羞耻。",
+    "avatar_mini" : "http://cdn.v2ex.com/avatar/c4ca/4238/1_mini.png?m=1335110663",
+    "avatar_normal" : "http://cdn.v2ex.com/avatar/c4ca/4238/1_normal.png?m=1335110663",
+    "avatar_large" : "http://cdn.v2ex.com/avatar/c4ca/4238/1_large.png?m=1335110663",
+    "created" : 1272289546
 }

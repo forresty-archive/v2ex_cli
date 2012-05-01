@@ -1,9 +1,9 @@
 require "spec_helper"
 
 describe V2exCli::Engine do
-  subject { V2exCli::Engine }
+  subject { V2exCli::Engine.new }
   it { should respond_to :latest }
-  let(:engine) { V2exCli::Engine }
+  let(:engine) { subject }
 
   context '#latest' do
     it "should retrieve latest topics" do
@@ -54,7 +54,7 @@ describe V2exCli::Engine do
     end
   end
 
-  context '#api_endpoint' do
-    its(:api_endpoint) { should =~ /v2ex/ }
+  context '#default_endpoint' do
+    its(:default_endpoint) { should =~ /v2ex/ }
   end
 end
